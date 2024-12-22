@@ -9,7 +9,7 @@ function Home2() {
         <h2 style={{ fontSize: "2.6em", marginTop: "40px", fontWeight: 'normal', textAlign: 'center', color: 'var(--imp-text-color)' }}>
           SERVICES I OFFER
         </h2>
-        <p className="home-about-body" style={{ textAlign: 'center' }}>
+        <p className="home-about-body" style={{ textAlign: 'center'  }}>
           As a freelancer and software engineer, I offer a range of services to help bring your projects to life:
         </p>
         <Row className="justify-content-center">

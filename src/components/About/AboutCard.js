@@ -8,10 +8,10 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-Hi Everyone, I am <span className="purple">Fabian Kaoka </span>
+<span className="purple">Fabian Kaoka </span>
 from <span className="purple">Nyeri, Kenya.</span>
 <br />
-I am currently employed as a Networking Architect and a Web Developer.
+Working as a Networking Architect and a Web Developer.
             <br />
             I have completed my Bachelors Degree in Computer Science at Dedan Kimathi University
           .
@@ -24,7 +24,7 @@ I am currently employed as a Networking Architect and a Web Developer.
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Reading
             </li>
             <li className="about-activity">
               <ImPointRight /> Swimming
