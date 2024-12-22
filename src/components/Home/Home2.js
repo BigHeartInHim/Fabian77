@@ -1,114 +1,91 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET'ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              Life in this field is Amazing🤷‍♂️
-              <br />
-              <br />I'm good in 
-              <i>
-                <b className="purple"> Python, Javascript , HTML and CSS. </b>
-              </i>
-              <br />
-              <br />
-              I specialize in building  &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion in developing ML models using
-               <b className="purple"> Spyder</b> and other Projects using
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript and Python Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
+        {/* Services Section */}
+          <h2 style={{ fontSize: "2.6em", marginTop: "40px", fontWeight: 'normal', textAlign: 'center', color: 'var(--imp-text-color)' }}>
+          SERVICES I OFFER
+        </h2>
+        <p className="home-about-body" style={{ textAlign: 'center' }}>
+          As a freelancer and software engineer, I offer a range of services to help bring your projects to life:
+        </p>
+        <Row className="justify-content-center">
+          {/* First Row of 4 Cards */}
+          <Col sm={12} md={6} lg={3} className="mb-4">
+            <Card className="service-card">
+              <Card.Body className="service-card-body">
+                <Card.Title className="service-card-title">Web Development</Card.Title>
+                <Card.Text className="service-card-text">
+                  Building responsive, user-friendly websites using modern technologies like React.js, Next.js, and Node.js.
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+
+          <Col sm={12} md={6} lg={3} className="mb-4">
+            <Card className="service-card">
+              <Card.Body className="service-card-body">
+                <Card.Title className="service-card-title">Custom Web Applications</Card.Title>
+                <Card.Text className="service-card-text">
+                  Full-stack development of tailored web applications to meet your business needs.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col sm={12} md={6} lg={3} className="mb-4">
+            <Card className="service-card">
+              <Card.Body className="service-card-body">
+                <Card.Title className="service-card-title">Blockchain Development</Card.Title>
+                <Card.Text className="service-card-text">
+                  Developing decentralized applications (dApps) and smart contracts on blockchain platforms.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col sm={12} md={6} lg={3} className="mb-4">
+            <Card className="service-card">
+              <Card.Body className="service-card-body">
+                <Card.Title className="service-card-title">Machine Learning & AI</Card.Title>
+                <Card.Text className="service-card-text">
+                  Designing and deploying machine learning models to solve real-world problems using tools like Python and Spyder.
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
+
+        {/* Second Row of 2 Cards */}
+        <Row className="justify-content-center">
+          <Col sm={12} md={6} lg={4} className="mb-4">
+            <Card className="service-card">
+              <Card.Body className="service-card-body">
+                <Card.Title className="service-card-title">Consultation & Training</Card.Title>
+                <Card.Text className="service-card-text">
+                  Providing expert advice and training on software engineering, web development, and machine learning topics.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col sm={12} md={6} lg={4} className="mb-4">
+            <Card className="service-card">
+              <Card.Body className="service-card-body">
+                <Card.Title className="service-card-title">Bug Fixes & Optimization</Card.Title>
+                <Card.Text className="service-card-text">
+                  Analyzing and improving the performance of your existing applications by fixing bugs and optimizing code.
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>
     </Container>
   );
 }
+
 export default Home2;
